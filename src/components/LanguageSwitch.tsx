@@ -1,7 +1,7 @@
 'use client';
 
 import dynamic from 'next/dynamic';
-import { Globe } from 'lucide-react';
+
 
 const Switch = dynamic(() => import('react-switch'), {
   ssr: false,

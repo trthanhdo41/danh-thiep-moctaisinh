@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { useState } from 'react';
+import Image from 'next/image';
 import {
   Phone,
   Mail,
@@ -10,32 +11,21 @@ import {
   Instagram,
   QrCode,
   Download,
-  Heart,
   Leaf,
-  Camera,
   CreditCard,
   Info,
   MapPin,
-  Clock,
   Users,
-  Palette,
-  Sparkles,
-  Star,
   Zap,
   ChevronRight,
-  ExternalLink,
-  Home,
   Package,
   Building2,
   Smartphone,
-  Wallet,
-  Image,
-  MessageCircle,
-  Languages,
-  Settings
+  Settings,
+  Camera
 } from 'lucide-react';
 import { QRCodeCanvas } from 'qrcode.react';
-import LanguageSwitch from './LanguageSwitch';
+
 import TikTokIcon from './TikTokIcon';
 import Switch from './Switch';
 
@@ -285,9 +275,11 @@ END:VCARD`;
           <div className="absolute inset-0 rounded-full bg-green-500 animate-pulse"></div>
           
           <div className="relative w-20 h-20 bg-white/20 rounded-full flex items-center justify-center overflow-hidden backdrop-blur-sm shadow-lg border-2 border-white/30 animate-zoomInOut">
-            <img 
+            <Image 
               src="/LOGO MTS V1.png" 
               alt="Cúc Phương Logo" 
+              width={96}
+              height={96}
               className="w-[120%] h-[120%] object-cover"
             />
           </div>
@@ -328,7 +320,7 @@ END:VCARD`;
           { key: 'company', label: t.company, icon: Building2 },
           { key: 'services', label: t.services, icon: Settings },
           { key: 'products', label: t.products, icon: Package },
-          { key: 'gallery', label: t.gallery, icon: Image }
+          { key: 'gallery', label: t.gallery, icon: Camera }
         ].map((tab) => (
           <button
             key={tab.key}
@@ -360,9 +352,11 @@ END:VCARD`;
           </div>
           <p className="text-purple-100 text-sm mb-3">{t.paymentQRDescription}</p>
           <div className="inline-block p-3 bg-white rounded-lg shadow-lg">
-            <img 
+            <Image 
               src="/qrThanhToan.jpg" 
               alt="QR Code Thanh toán ACB" 
+              width={96}
+              height={96}
               className="w-24 h-24"
             />
           </div>
@@ -478,9 +472,11 @@ END:VCARD`;
             <div className="absolute inset-0 rounded-full bg-pink-500 animate-pulse"></div>
             
             <div className="relative w-16 h-16 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm overflow-hidden shadow-lg border border-white/30 animate-zoomInOut">
-              <img 
+              <Image 
                 src="/LOGO MTS V1.png" 
                 alt="Cúc Phương Logo" 
+                width={77}
+                height={77}
                 className="w-[120%] h-[120%] object-cover"
               />
             </div>
@@ -521,7 +517,7 @@ END:VCARD`;
             { key: 'company', label: t.company, icon: Building2 },
             { key: 'services', label: t.services, icon: Settings },
             { key: 'products', label: t.products, icon: Package },
-            { key: 'gallery', label: t.gallery, icon: Image }
+            { key: 'gallery', label: t.gallery, icon: Camera }
           ].map((tab) => (
             <button
               key={tab.key}
@@ -553,9 +549,11 @@ END:VCARD`;
                 </div>
                 <p className="text-purple-100 text-sm mb-3">{t.paymentQRDescription}</p>
                 <div className="inline-block p-3 bg-white rounded-lg shadow-lg">
-                  <img 
+                  <Image 
                   src="/qrThanhToan.jpg" 
                     alt="QR Code Thanh toán ACB" 
+                    width={96}
+                    height={96}
                     className="w-24 h-24"
                   />
                 </div>
@@ -686,9 +684,11 @@ END:VCARD`;
                 boxShadow: 'inset 8px 8px 16px #d1d5db, inset -8px -8px 16px #ffffff',
               }}
             >
-              <img 
+              <Image 
                 src="/LOGO MTS V1.png" 
                 alt="Cúc Phương Logo" 
+                width={96}
+                height={96}
                 className="w-[120%] h-[120%] object-cover"
               />
             </div>
@@ -716,7 +716,7 @@ END:VCARD`;
             { key: 'company', label: t.company, icon: Building2 },
             { key: 'services', label: t.services, icon: Settings },
             { key: 'products', label: t.products, icon: Package },
-            { key: 'gallery', label: t.gallery, icon: Image }
+            { key: 'gallery', label: t.gallery, icon: Camera }
           ].map((tab) => (
             <button
               key={tab.key}
@@ -806,9 +806,11 @@ END:VCARD`;
                 boxShadow: '4px 4px 8px #d1d5db, -4px -4px 8px #ffffff',
               }}
             >
-              <img 
+              <Image 
                 src="/qrThanhToan.jpg" 
                   alt="QR Code Thanh toán ACB" 
+                  width={80}
+                  height={80}
                   className="w-20 h-20"
                 />
               </div>
